@@ -9,6 +9,6 @@ module.exports = {
     if (!ong) {
       return res.status(400).json({ error: "No found ONG with this ID" });
     }
-    return res.json({ ong });
+    return res.json(ong);
   }
 }

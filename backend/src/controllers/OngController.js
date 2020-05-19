@@ -6,7 +6,7 @@ module.exports = {
   async index(req, res) {
     const ongs = await connection('ongs').select('*');
 
-    return res.json({ ongs });
+    return res.json(ongs);
   },
 
   async create(req, res) {
@@ -23,6 +23,6 @@ module.exports = {
       uf,
     })
 
-    return res.json({ id });
+    return res.json(id);
   }
 }
